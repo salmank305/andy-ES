@@ -54,14 +54,14 @@ export const Navbar = () => {
               </li>
               <hr style={{ color: "#FFFFFF", width: "100" }} />
               <li className="nav-item px-3">
-                <NavLink
+                <a
                   className="nav-link active"
                   aria-current="page"
                   href="#programSection"
                   style={{ fontSize: 15, color: "#FFFFFF" }}
                 >
                   PROGRAMS
-                </NavLink>
+                </a>
               </li>
               <hr style={{ color: "#FFFFFF", width: "100" }} />
               <li className="nav-item px-3">
