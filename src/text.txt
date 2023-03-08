@@ -1,0 +1,34 @@
+    <div className="formContainer">
+      <form onSubmit={requestOTP}>
+        <h1>sinn in </h1>
+        <div className="mb-3">
+          <label htmlFor="phoneNumberInput" className="form-lable">
+            phone number
+          </label>
+          <input type="tel" className="form-control" id="phoneNumberInput" aria-describedby="emailHelp" value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)}/>
+          <div id="phoneNumberHelp" className="form-text">
+            plz enter phone
+          </div>
+        </div>
+
+        {expandForm === true ? (
+          <>
+            <div className="mb-3">
+              <label htmlFor="otpInput" className="form-lable">
+                OTP
+              </label>
+              <input type="number" className="form-control" id="otpInput" value={otp} onChange={varifyOTP}/>
+              <div id="otpHelp" className="form-text">
+                plz enter otp u receve
+              </div>
+            </div>
+          </>
+        ) : null}
+        {expandForm === false ? (
+          <button type="submit" className="btn btn-primary">
+            request OTP
+          </button>
+        ) : null}
+        <div id="recaptcha-container"></div>
+      </form>
+    </div>
