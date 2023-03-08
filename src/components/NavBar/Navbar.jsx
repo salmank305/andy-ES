@@ -14,7 +14,6 @@ export const Navbar = () => {
             style={{ fontWeight: 900, fontSize: 36, textDecoration: "none" }}
           >
             <div className="head">
-              {" "}
               <span style={{ color: "#F5A425" }}>CS</span> ELP
             </div>
           </a>

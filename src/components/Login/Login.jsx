@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { authentification } from "../firebase";
+import { authentification } from "../../firebase";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { Navigate, NavLink } from "react-router-dom";
 export const Login = () => {
